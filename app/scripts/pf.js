@@ -624,6 +624,10 @@ var pf = (function() {
 
 				casterLevel += that.classes[data.name] ? that.classes[data.name] : 0;
 				casterLevel += that.classes['!' + data.name] ? that.classes['!' + data.name] : 0;
+				// Paladins cast at a lower level
+				if (data.name.toLowerCase() === 'paladin') {
+					casterLevel -= 3;
+				}
 				casterLevel += bonusHandler.getBonus([
 					'caster_level',
 					this.id + '_caster_level'
