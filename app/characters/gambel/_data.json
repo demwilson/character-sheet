@@ -1,0 +1,374 @@
+[
+	{
+		"name": "Gambel Chance",
+		"xp": {
+			"current": 0,
+			"nextLevel": 0
+		},
+		"abilityScores": {
+			"strength": 19,
+			"dexterity": 12,
+			"constitution": 14,
+			"intelligence": 14,
+			"wisdom":  8,
+			"charisma": 18
+		},
+		"bonuses": [
+			{	"name": "Favoured Class Bonus: Health",
+				"list": [
+					"1::hp_level"
+				]
+			},
+			{	"name": "Toughness",
+				"list": [
+					"1::hp_level"
+				]
+			},
+			{	"name": "Item: Runes of Natural Armor +4",
+				"list": [
+					"4:natural_armor:armor_class"
+				]
+			},
+			{	"name": "Feat: Iron Will",
+				"list": [
+					"2::will"
+				]
+			},
+			{	"name": "Mythic Power Attack",
+				"active": false,
+				"requires": ["!mythic_power_attack_(mythic_powered)"],
+				"list": [
+					"-5::melee_to_hit",
+					"15::melee_strength_like_damage"
+				]
+			},
+			{	"name": "Mythic Power Attack (Mythic Powered)",
+				"active": false,
+				"requires": ["!mythic_power_attack"],
+				"list": [
+					"15::melee_strength_like_damage"
+				]
+			},
+			{	"name": "Smite Evil (evil)",
+				"active": false,
+				"requires": ["!smite_evil_(evil_outsider)"],
+				"list": [
+					"11::to_hit",
+					"17::damage"
+				]
+			},
+			{	"name": "Smite Evil (evil outsider)",
+				"active": false,
+				"requires": ["!smite_evil_(evil)"],
+				"list": [
+					"11::to_hit",
+					"34::damage"
+				]
+			},
+			{	"name": "Weapon Focus",
+				"list": [
+					"1::greataxe_to_hit"
+				]
+			},
+			{	"name": "Template: Stats",
+				"list": [
+					"4:untyped:strength",
+					"2:untyped:dexterity",
+					"4:untyped:constitution",
+					"2:untyped:intelligence",
+					"2:untyped:wisdom",
+					"4:untyped:charisma"
+				]
+			},
+			{	"name": "Template: luck",
+				"list": [
+					"2:luck:armor_class",
+					"1:luck:greataxe_to_hit",
+					"2::skills"
+				]
+			},
+			{	"name": "Mythic:",
+				"list": [
+					"2:untyped:strength"
+				]
+			},
+			{	"name": "Progression: Stats",
+				"list": [
+					"4:untyped:strength"
+				]
+			},
+			{	"name": "Item: Tombs",
+				"list": [
+					"5:untyped:strength",
+					"5:untyped:dexterity",
+					"5:untyped:constitution",
+					"5:untyped:intelligence",
+					"5:untyped:wisdom",
+					"5:untyped:charisma"
+				]
+			},
+			{	"name": "Item: Runes of Physical 6/2/2",
+				"list": [
+					"6:enhancement:strength",
+					"2:enhancement:dexterity",
+					"2:enhancement:constitution"
+				]
+			},
+			{	"name": "Item: Belt of Physical 6/6/6",
+				"list": [
+					"6:enhancement:strength",
+					"6:enhancement:dexterity",
+					"6:enhancement:constitution"
+				]
+			},
+			{	"name": "Item: Runes of Mental 6/2/2",
+				"list": [
+					"6:enhancement:intelligence",
+					"2:enhancement:wisdom",
+					"2:enhancement:charisma"
+				]
+			},
+			{	"name": "Item: Headband of Mental 6/6/6",
+				"list": [
+					"6:enhancement:intelligence",
+					"6:enhancement:wisdom",
+					"6:enhancement:charisma"
+				]
+			},
+			{	"name": "Item: Runes of Resistance +5",
+				"list": [
+					"5:resistance:saves"
+				]
+			},
+			{	"name": "Item: Ring of Protection +5",
+				"list": [
+					"5:deflection:armor_class"
+				]
+			},
+			{	"name": "Item: Runes of Protection +5",
+				"list": [
+					"4:deflection:armor_class"
+				]
+			},
+			{	"name": "Heavy fortification, Heavy Steel Shield +5",
+				"active": true,
+				"list": [
+					"7:shield:armor_class"
+				]
+			},
+			{	"name": "Patryn Runes",
+				"list": [
+					"9:armor:armor_class"
+				]
+			},
+			{	"name": "Defiant (+2), Phase Locking (+2), Heartseeker (+1) Greataxe +5",
+				"list": [
+					"5::greataxe_to_hit",
+					"5::greataxe_damage",
+					"5::power_attack_greataxe_to_hit",
+					"5::power_attack_greataxe_damage"
+				]
+			},
+			{	"name": "Spell: Ironskin",
+				"list": [
+					"6:natural_armor:armor_class"
+				]
+			}
+		],
+		"attacks": {
+			"melee": [
+				{	"name": "greataxe",
+					"damage": {
+						"dice": "1d12",
+						"factor": 1.5,
+						"critical": "x3"
+					}
+				},
+				{	"name": "touch attack",
+					"type": "natural"
+				}
+			],
+			"ranged": [
+				{	"name": "touch attack",
+					"type": "natural"
+				}
+			]
+		},
+		"classes": {
+			"Paladin": 17
+		},
+		"race": "Half-Elf",
+		"alignment": "LG",
+		"size": "Medium",
+		"type": "humanoid (human)",
+		"hp": {
+			"rolls": [10, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+		},
+		"hd": "17d10",
+		"languages": [
+			"Common",
+			"Elven",
+			"Dwarven",
+			"Giant",
+			"Celestial",
+			"Abyssal",
+			"High Common",
+			"Sartan"
+		],
+		"speed": "60 ft.",
+		"space": "5 ft.",
+		"reach": "5 ft.",
+		"dr": "15/magic",
+		"resist": "cold 15; electricity 15",
+		"sr": "26",
+		"senses": [
+			"Darkvision 60 ft.",
+			"low-light vision"
+		],
+		"baseAttackBonus": 17,
+		"saves": {
+			"fortitude": {
+				"base": 10,
+				"stats": ["constitution", "charisma"]
+			},
+			"reflex": {
+				"base": 5,
+				"stats": ["dexterity", "charisma"]
+			},
+			"will": {
+				"base": 10,
+				"stats": ["wisdom", "charisma"]
+			}
+		},
+		"spells": [
+			{	"name": "Paladin",
+				"type": "prepared",
+				"stat": "charisma",
+				"markdown": "spells.md",
+				"baseSpells": [null, 4, 3, 2, 1]
+			}
+		],
+		"skills": [
+			{	"name": "Acrobatics",
+				"stat": "dexterity",
+				"acp": true
+			},
+			{	"name": "Appraise",
+				"stat": "intelligence"
+			},
+			{	"name": "Bluff",
+				"stat": "charisma"
+			},
+			{	"name": "Climb",
+				"stat": "strength",
+				"acp": true
+			},
+			{	"name": "Craft",
+				"stat": "intelligence",
+				"classSkill": true
+			},
+			{	"name": "Diplomacy",
+				"ranks": 17,
+				"stat": "charisma",
+				"classSkill": true
+			},
+			{	"name": "Disguise",
+				"stat": "charisma"
+			},
+			{	"name": "Escape Artist",
+				"stat": "dexterity",
+				"acp": true
+			},
+			{	"name": "Fly",
+				"stat": "dexterity",
+				"acp": true
+			},
+			{	"name": "Heal",
+				"classSkill": true
+			},
+			{	"name": "Intimidate",
+				"stat": "charisma"
+			},
+			{	"name": "Knowledge (Engineering)",
+				"stat": "intelligence",
+				"ranks": 10,
+				"classSkill": true
+			},
+			{	"name": "Knowledge (History)",
+				"stat": "intelligence",
+				"ranks": 10,
+				"classSkill": true
+			},
+			{	"name": "Knowledge (Military)",
+				"stat": "intelligence",
+				"ranks": 14,
+				"classSkill": true
+			},
+			{	"name": "Knowledge (Nobility)",
+				"stat": "intelligence",
+				"ranks": 17,
+				"classSkill": true
+			},
+			{	"name": "Knowledge (Religion)",
+				"stat": "intelligence",
+				"ranks": 17,
+				"classSkill": true
+			},
+			{	"name": "Perception",
+				"stat": "wisdom"
+			},
+			{	"name": "Perform",
+				"stat": "charisma"
+			},
+			{	"name": "Profession (Soldier)",
+				"stat": "charisma",
+				"ranks": 9,
+				"classSkill": true
+			},
+			{	"name": "Ride",
+				"stat": "dexterity",
+				"ranks": 8,
+				"acp": true
+			},
+			{	"name": "Sense Motive",
+				"ranks": 17,
+				"classSkill": true
+			},
+			{	"name": "Spellcraft",
+				"stat": "intelligence",
+				"ranks": 17,
+				"classSkill": true
+			},
+			{	"name": "Stealth",
+				"stat": "dexterity",
+				"acp": true
+			},
+			{	"name": "Survival",
+				"stat": "wisdom"
+			},
+			{	"name": "Swim",
+				"stat": "strength",
+				"acp": true
+			}
+		],
+		"feats": [
+			"[Fey Foundling](:nethys-feat:Fey Foundling)",
+			"[Extra Channeling](:nethys-feat:Extra Channeling)",
+			"[Reward of Life](:nethys-feat:Reward of Life)",
+			"[Selective Channeling](:nethys-feat:Selective Channeling)",
+			"[Power Attack](:nethys-feat:Power Attack)",
+			"[Iron Will](:nethys-feat:Iron Will)",
+			"[Improved Iron Will](:nethys-feat:Improved Iron Will)",
+			"[Toughness](:nethys-feat:Toughness)",
+			"[Weapon Focus (greataxe)](:nethys-feat:Weapon Focus)"
+		],
+		"additionalSections": [
+			"kevay.md",
+			"paladin.md",
+			"gear.md"
+		],
+		"options": {
+			"portrait": "https://i.pinimg.com/474x/3c/9f/9e/3c9f9ea2f8e34925e691115325527a91--batman-comics-viking-age.jpg"
+		}
+	}
+]

@@ -1,0 +1,6 @@
+-|-|-
+-|-|-
+4th | {{pf.spellsPerDay('Paladin', 4)}} | *[burst of glory](:d20-spell:burst-of-glory)*, *[burst of glory](:d20-spell:burst-of-glory)*, *[king's castle](:d20-spell:king-s-castle)*  
+3rd | {{pf.spellsPerDay('Paladin', 3)}} | *[burst of speed](:d20-spell:burst-of-glory)*, *[burst of speed](:d20-spell:burst-of-speed)*, *[greater stunning barrier](:d20-spell:stunning-barrier)*, *[greater stunning barrier](:d20-spell:stunning-barrier)*, *[shield of fortification](:d20-spell:shield-of-fortification)*
+2nd | {{pf.spellsPerDay('Paladin', 2)}} | *[litany of righteousness](:d20-spell:litany-of-righteousness)* $DC {{pf.spellDC('Paladin', 2)}}$, *[litany of righteousness](:d20-spell:litany-of-righteousness)*, *[litany of righteousness](:d20-spell:litany-of-righteousness)*, *[litany of righteousness](:d20-spell:litany-of-righteousness)*, *[ironskin](:d20-spell:ironskin)*, *[ironskin](:d20-spell:ironskin)*
+1st | {{pf.spellsPerDay('Paladin', 1)}} | *[hero's defiance](:d20-spell:hero-s-defiance)*, *[hero's defiance](:d20-spell:hero-s-defiance)*, *[hero's defiance](:d20-spell:hero-s-defiance)*, *[divine favor](:d20-spell:divine-favor)*, *[divine favor](:d20-spell:divine-favor)*, *[grace](:d20-spell:grace)*, *[grace](:d20-spell:grace)*
